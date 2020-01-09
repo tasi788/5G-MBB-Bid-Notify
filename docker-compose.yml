@@ -1,0 +1,7 @@
+version: '2'
+services: 
+    notify: 
+        build: .
+        restart: unless-stopped
+        volumes:
+            - ./:/app
