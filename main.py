@@ -60,7 +60,7 @@ class bot:
                 pass
             else:
                 return
-            text = f'\[{data[0]}]\n' + \
+            text = f'\[{data[0]}]\n\n' + \
                 '*1800MHz*\n' + \
                 f'回合價：`{data[1]}`\n' + \
                 f'暫時得標頻寬：`{data[2]}`\n' + \
@@ -74,7 +74,8 @@ class bot:
                 f'回合價：`{data[8]}`\n' + \
                 f'回合價暫得標頻寬：`{data[9]}`\n' + \
                 f'暫時得標頻寬：`{data[10]}`\n' + \
-                f'暫時得標金：`{data[11]}`\n'
+                f'暫時得標金：`{data[11]}`\n\n' + \
+                f'暫時得標金單位：新臺幣百萬元'
             self.bot.send_message(config.channel, text, parse_mode='markdown')
 
     def loadpage_company(self):
