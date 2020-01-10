@@ -92,7 +92,7 @@ class bot:
                 f'回合價暫得標頻寬：`{data[9]}`\n' + \
                 f'暫時得標頻寬：`{data[10]}`\n' + \
                 f'暫時得標金：`{data[11]}`\n\n' + \
-                f'總標金：`{total}``' + \
+                f'總標金：`{total}`\n' + \
                 f'暫時得標金單位：新臺幣百萬元'
             self.bot.send_message(config.channel, text, parse_mode='markdown')
 
